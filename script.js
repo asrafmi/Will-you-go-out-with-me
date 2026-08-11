@@ -4,8 +4,9 @@ const gif = qs(".gif");
 const [yesBtn, noBtn] = [".yes-btn", ".no-btn"].map(qs);
 
 const handleYesClick = () => {
-  question.innerHTML = "Yeahhhhhhhhhhh! See you tomorrow!!";
-  gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  question.innerHTML = "yeayyyy, see u!!";
+//   gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  gif.src = "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Y2w3eDVjNmk3cm5zYXB2NjQzdmM0dG92dGN2YnhueTlwNDJ4emV3MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UWnvhKHZNBSgRqVbhB/giphy.gif";
 
   // Remove the 'mouseover' event listener from noBtn
   noBtn.removeEventListener("mouseover", handleNoMouseOver);
@@ -140,7 +141,7 @@ const handleYesClick = () => {
     const randomIndex = Math.floor(Math.random() * dateIdeas.length);
     const selectedDateIdea = dateIdeas[randomIndex];
 
-    alert(`How about this romantic date idea: ${selectedDateIdea}`);
+    // alert(`How about this romantic date idea: ${selectedDateIdea}`);
   });
 
   // Replace yesBtn with the new letsGoBtn
